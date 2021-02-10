@@ -1,3 +1,5 @@
+// Chapter 2
+
 /*
 Looping a triangle
 
@@ -94,5 +96,40 @@ for (let r = 0; r < size; r++) {
 
   console.log(pattern);
 }
+
+console.log("==================================================\n");
+
+// Chapter 3
+
+/*
+Minimum
+
+The previous chapter introduced the standard function Math.min that returns
+its smallest argument. We can build something like that now. Write a function
+min that takes two arguments and returns their minimum.
+
+// Your code here.
+
+console.log(min(0, 10));
+// → 0
+console.log(min(0, -10));
+// → -10
+*/
+
+console.log("Minimum");
+console.log("==================================================");
+
+function min(x, y) {
+  return Math.min(x, y);
+}
+
+// const min = (x, y) => Math.min(x,y);
+
+// const min = function(x,y) {
+//   return Math.min(x, y);
+// }
+
+console.log('Min of 0 and 10 is', min(0, 10));
+console.log('Min of 0 and -10 is', min(0, -10));
 
 console.log("==================================================\n");
