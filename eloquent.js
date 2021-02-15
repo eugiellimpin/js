@@ -237,7 +237,7 @@ console.log(countChar("kakkerlak", "k"));
 
 console.log("==================================================\n");
 
-// Chapter 3
+// Chapter 4
 
 /*
 The sum of a range
