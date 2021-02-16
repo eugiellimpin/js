@@ -499,7 +499,7 @@ function listToArray(list) {
     const { value, rest } = _list;
     array.push(value);
     _list = rest;
-  } while(!!_list)
+  } while (!!_list);
 
   return array;
 }
@@ -533,5 +533,30 @@ console.log(nth(arrayToList([10, 20, 30]), 2));
 // → 30
 console.log(nth(arrayToList([]), 2));
 // → undefined
+
+console.log("==================================================");
+
+// Chapter 5
+
+/*
+Flattening
+
+Use the reduce method in combination with the concat method to “flatten” an
+array of arrays into a single array that has all the elements of the original
+arrays.
+
+let arrays = [[1, 2, 3], [4, 5], [6]];
+// Your code here.
+// → [1, 2, 3, 4, 5, 6]
+*/
+
+console.log("Flattening");
+console.log("==================================================");
+
+let arrays = [[1, 2, 3], [4, 5], [6]];
+function flat(arrayOfArrays) {
+  return arrayOfArrays.reduce((flattened, arr) => flattened.concat(arr));
+}
+console.log(flat(arrays));
 
 console.log("==================================================");
